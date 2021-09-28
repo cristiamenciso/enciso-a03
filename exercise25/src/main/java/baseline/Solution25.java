@@ -7,8 +7,12 @@ package baseline;
 
 public class Solution25 {
     public static void main(String[] args) {
+        PasswordStrength pass = new PasswordStrength();
         // Prompt user for password
+        pass.getInput();
         // call function/method to validate strength of password
+        int result = pass.passwordValidator(pass.getPassword());
         // print out results
+        pass.outputResult(result, pass.getPassword());
     }
 }
