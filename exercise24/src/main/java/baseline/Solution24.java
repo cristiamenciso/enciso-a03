@@ -13,7 +13,7 @@ public class Solution24 {
         checker.getInput();
         // Call method to determine if strings are anagrams
         // Display results
-        System.out.println(checker.printOutput(checker.isAnagram()));
+        checker.printOutput(checker.isAnagram(checker.getWord1(), checker.getWord2()));
 
     }
 

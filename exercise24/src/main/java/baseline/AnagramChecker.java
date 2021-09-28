@@ -27,15 +27,15 @@ public class AnagramChecker {
         return word2;
     }
     // make method to check if two string are anagrams
-    public boolean isAnagram() {
-        if (getWord1().length() != getWord2().length()) {
+    public boolean isAnagram(String word1, String word2) {
+        if (word1.length() != word2.length()) {
             return false;
         }
         int charRange = 256;
         int count[] = new int[charRange];
-        for (int i = 0; i < getWord1().length(); i++) {
-            count[getWord1().charAt(i)]++;
-            count[getWord1().charAt(i)]--;
+        for (int i = 0; i < word1.length(); i++) {
+            count[word1.charAt(i)]++;
+            count[word1.charAt(i)]--;
         }
         for (int i = 0; i < charRange; i++) {
             if (count[i] != 0) {
@@ -54,7 +54,7 @@ public class AnagramChecker {
         System.out.print("Enter the second string: ");
         setWord2(in.nextLine());
     }
-    public String printOutput(boolean result) {
+    public void printOutput(boolean result) {
         String output;
         if(result) {
             output = "\"" + getWord1() + "\"" + " amd " + "\"" + getWord2() + "\"" + " are anagrams.";
@@ -62,6 +62,6 @@ public class AnagramChecker {
             output = "\"" + getWord1() + "\"" + " amd " + "\"" + getWord2() + "\"" + " are not anagrams.";
         }
 
-        return output;
+        System.out.println(output);
     }
 }
