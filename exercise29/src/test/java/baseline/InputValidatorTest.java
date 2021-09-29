@@ -12,13 +12,32 @@ class InputValidatorTest {
 
     @Test
     void getR() {
+        InputValidator.setR("12");
+        String expected = "12";
+        String actual = InputValidator.getR();
+        assertEquals(expected, actual);
+    }
+    @Test
+    void setR() {
+        InputValidator.setR("35");
+        String expected = "35";
+        String actual = InputValidator.getR();
+        assertEquals(expected, actual);
+
     }
 
     @Test
     void validateInput() {
+        double actual = InputValidator.validateInput();
+        double expected = Double.parseDouble(InputValidator.getR());
+        assertEquals(expected, actual);
     }
 
     @Test
     void calculateYears() {
+        int actual  = InputValidator.calculateYears(4);
+        int expected = 18;
+        assertEquals(expected, actual);
+
     }
 }

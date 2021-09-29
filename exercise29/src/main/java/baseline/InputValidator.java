@@ -5,25 +5,50 @@ package baseline;
  *  Copyright 2021 Cristiam Enciso
  */
 
+import java.util.Scanner;
+
 public class InputValidator {
     // make variables
-    private String r;
+    private static String r;
 
 
     // make constructor and get methods
-    public InputValidator(String r) {
-        this.r = r;
+    InputValidator() {
+
+    }
+    public static void setR(String r) {
+        InputValidator.r = r;
     }
 
-    public String getR() {
+    public static String getR() {
         return r;
     }
     // method to validate input
-    public double validateInput(String r) {
-
+    public static double validateInput() {
+        double input = 0;
+        while (true) {
+            try {
+                getInput();
+                input = Double.parseDouble(getR());
+                if (input == 0.0)
+                    throw new IllegalArgumentException();
+                break;
+            } catch (IllegalArgumentException e) {
+                System.out.println("Sorry. that's not a valid input.");
+            }
+        }
+        return input;
     }
     // method to calculate years
-    public int calculateYears(double r) {
+    public static int calculateYears(double r) {
+        return (int)(72 / r);
+    }
+    public static void getInput() {
+        Scanner in = new Scanner(System.in);
+        System.out.print("What is the rate of return? ");
+        setR(in.nextLine());
 
     }
+
+
 }
