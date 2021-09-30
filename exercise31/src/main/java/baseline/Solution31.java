@@ -6,8 +6,11 @@ package baseline;
 
 public class Solution31 {
     public static void main(String[] args) {
+        KarvonenRate table = new KarvonenRate();
         // prompt user for input
+        table.readUserInput();
         // calculate heart rate
         // print output
+        table.printTable(table.getAge(), table.getRestRate());
     }
 }
