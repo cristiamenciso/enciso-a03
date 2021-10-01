@@ -4,12 +4,23 @@ package baseline;
  *  Copyright 2021 Cristiam Enciso
  */
 
-public class Solution33 {
-    public static void main(String[] args) {
+
+import java.security.NoSuchAlgorithmException;
+
+public class Solution32 {
+    public static void main(String[] args) throws NoSuchAlgorithmException {
+
         // get user difficulty
         // generate a random number based on difficulty
         // validate user input
+        GuessingGame game = new GuessingGame();
+        game.userGuess();
         // process input
+
+
+
+
+
         // print results
 
 
