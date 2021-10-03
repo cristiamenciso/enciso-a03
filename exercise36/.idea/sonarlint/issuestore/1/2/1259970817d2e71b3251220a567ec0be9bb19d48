@@ -1,0 +1,13 @@
+
+R
+java:S1854"7Remove this useless assignment to local variable "end".(†êÍ¡úÿÿÿÿ
+C
+java:S1481"(Remove this unused "end" local variable.(†êÍ¡úÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÖáõÓ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ìé¸ì
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(åœ±íùÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(Ì•ıÂùÿÿÿÿ
+S	java:S106m"9Replace this use of System.out or System.err by a logger.(§Ô¯ùÿÿÿÿ
+N	java:S106n"9Replace this use of System.out or System.err by a logger.(á”Á„
+M	java:S106o"9Replace this use of System.out or System.err by a logger.(è“Û\
+N	java:S106p"9Replace this use of System.out or System.err by a logger.(©Ø»¤
