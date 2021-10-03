@@ -5,6 +5,11 @@ package baseline;
  *  Copyright 2021 Cristiam Enciso
  */
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
+
 public class PasswordGenerator {
     private String minLength;
     private String specChar;
@@ -14,6 +19,11 @@ public class PasswordGenerator {
         this.minLength = length;
         this.specChar = special;
         this.numOfNumbers = numbers;
+    }
+
+    public PasswordGenerator() {
+        // constructor to instantiate
+
     }
     // make get methods
 
@@ -30,6 +40,26 @@ public class PasswordGenerator {
     }
     // method to generate password
     public String generatePassword(String length, String special, String numbers) {
+        Random random = new Random();
+        List<Character> character = new ArrayList<>();
+        String letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+        String specialCharacters = "!@#$%^&*";
+        String num = "1234567890";
+        for(int i = 0; i < Integer.parseInt(special); i++) {
+            character.add(specialCharacters.charAt(random.nextInt(specialCharacters.length())));
+        }
+        for(int i = 0; i < Integer.parseInt(numbers); i++) {
+            character.add(num.charAt(random.nextInt(num.length())));
+        }
+        for(int i = character.size() - 1; i < Integer.parseInt(length); i++) {
+            character.add(letters.charAt(random.nextInt(letters.length())));
+        }
+        Collections.shuffle(character);
+        String password = "";
 
+        for(Character s : character) {
+            password += Character.toString(s);
+        }
+        return password;
     }
 }
