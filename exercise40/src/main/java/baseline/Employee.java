@@ -1,11 +1,60 @@
 package baseline;
 
+import java.util.TreeMap;
+
+/*
+ *  UCF COP3330 Fall 2021 Assignment 3 Solutions
+ *  Copyright 2021 Cristiam Enciso
+ */
+
+
 public class Employee {
-    // make a class to hold all employee related variables
+    // make private variables for employee class
 
-    // make variables to hold employee info
+    private String firstName;
+    private String lastName;
+    private String role;
+    private String separationDate;
 
-    // make constructor
-
+    // make constructor for the employee
+    public Employee(String firstName, String lastName, String role, String separationDate) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.role = role;
+        this.separationDate = separationDate;
+    }
     // make get and set methods
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public String getSeparationDate() {
+        return separationDate;
+    }
+
+    public void setSeparationDate(String separationDate) {
+        this.separationDate = separationDate;
+    }
+
 }
