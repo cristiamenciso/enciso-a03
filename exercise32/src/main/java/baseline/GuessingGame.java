@@ -26,7 +26,6 @@ public class GuessingGame {
         Match game = new Match();
         game.getInput();
         game.makeRandomNumber(game.getDifficulty());
-        System.out.printf("This is the random number: %d%n", game.getRandomNumber());
         try {
             System.out.print("I have my number. WHat's your guess? ");
             setGuess(in.nextLine());

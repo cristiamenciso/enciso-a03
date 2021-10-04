@@ -1,0 +1,8 @@
+
+W
+java:S1854":Remove this useless assignment to local variable "search".(ñ¶ñü8ÜœÈÄ/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¬‹Ùùÿÿÿÿ
+H
+java:S1481"+Remove this unused "search" local variable.(ñ¶ñü8¡ÜœÈÄ/
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8•ªÈÄ/

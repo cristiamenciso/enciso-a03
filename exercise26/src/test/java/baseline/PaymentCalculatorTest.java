@@ -22,4 +22,56 @@ class PaymentCalculatorTest {
         assertEquals(expected, actual);
 
     }
+
+    @Test
+    void setBalance() {
+        PaymentCalculator test = new PaymentCalculator();
+        test.setBalance(200.0);
+        double actual = test.getBalance();
+        double expected = 200.0;
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void setAPR() {
+        PaymentCalculator test = new PaymentCalculator();
+        test.setAPR(200.0);
+        double actual = test.getAPR();
+        double expected = 200.0;
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void setMonthlyPayment() {
+        PaymentCalculator test = new PaymentCalculator();
+        test.setMonthlyPayment(200.0);
+        double actual = test.getMonthlyPayment();
+        double expected = 200.0;
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void getBalance() {
+        PaymentCalculator test = new PaymentCalculator();
+        double actual = test.getBalance();
+        double expected = 0.0;
+        assertEquals(expected, actual);
+
+    }
+
+    @Test
+    void getAPR() {
+        PaymentCalculator test = new PaymentCalculator();
+        double actual = test.getAPR();
+        double expected = 0.0;
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void getMonthlyPayment() {
+        PaymentCalculator test = new PaymentCalculator();
+        double actual = test.getMonthlyPayment();
+        double expected = 0.0;
+        assertEquals(expected, actual);
+    }
 }

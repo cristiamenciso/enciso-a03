@@ -62,7 +62,7 @@ public class StatisticsCalculator {
     }
 
 
-    public BigDecimal minimum(List<String> list) {
+    public BigDecimal min(List<String> list) {
         List<BigDecimal> big = new ArrayList<>();
         for(String str : list) {
             BigDecimal number = new BigDecimal(str);
@@ -73,7 +73,7 @@ public class StatisticsCalculator {
     }
 
 
-    public BigDecimal maximum(List<String> list) {
+    public BigDecimal max(List<String> list) {
         List<BigDecimal> big = new ArrayList<>();
         for(String str : list) {
             BigDecimal number = new BigDecimal(str);
@@ -86,7 +86,7 @@ public class StatisticsCalculator {
 
 
 
-    public BigDecimal standardDeviation(List<String> list) {
+    public BigDecimal std(List<String> list) {
         BigDecimal length = new BigDecimal(list.size());
         BigDecimal mean = average(list);
         List<BigDecimal> big = new ArrayList<>();

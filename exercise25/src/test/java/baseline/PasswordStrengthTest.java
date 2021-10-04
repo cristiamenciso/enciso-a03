@@ -42,4 +42,20 @@ class PasswordStrengthTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    void setPassword() {
+        PasswordStrength validator = new PasswordStrength();
+        validator.setPassword("objects");
+        String actual = validator.getPassword();
+        String expected = ("objects");
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void getPassword() {
+        PasswordStrength validator = new PasswordStrength();
+        String actual = validator.getPassword();
+        String expected = null;
+
+    }
 }

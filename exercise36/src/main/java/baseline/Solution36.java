@@ -18,7 +18,7 @@ public class Solution36 {
         // calculate
         // calculate minimum
         // Calculate standard deviation
-        test.printResults(test.average(list), test.minimum(list), test.maximum(list), test.standardDeviation(list));
+        test.printResults(test.average(list), test.min(list), test.max(list), test.std(list));
         // print out results
     }
 }

@@ -45,7 +45,7 @@ class StatisticsCalculatorTest {
         testList.add("200");
         testList.add("1000");
         testList.add("300");
-        BigDecimal actual = test.minimum(testList);
+        BigDecimal actual = test.min(testList);
         assertEquals(expected, actual);
 
     }
@@ -59,7 +59,7 @@ class StatisticsCalculatorTest {
         testList.add("200");
         testList.add("1000");
         testList.add("300");
-        BigDecimal actual = test.maximum(testList);
+        BigDecimal actual = test.max(testList);
         assertEquals(expected, actual);
 
     }
@@ -73,7 +73,7 @@ class StatisticsCalculatorTest {
         testList.add("200");
         testList.add("1000");
         testList.add("300");
-        BigDecimal actual = test.standardDeviation(testList);
+        BigDecimal actual = test.std(testList);
         assertEquals(expected, actual);
 
     }
